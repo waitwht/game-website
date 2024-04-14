@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game website</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="container">
+          <span class="logo">LOGO</span>
+          <nav>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About us</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">News</a></li>
+              <li class="btn"><a href="./contacts.html">Contacts</a></li>
+            </ul>
+          </nav>
+      </header>
+      
+      <div class="container hero-contacts">
+        <h1>Lorem Ipsum is simply dummy text of the printing and.</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        <img src="./img/map.png" />
+      </div>
+
+      <div class="container post-hero-contacts">
+        <div class="social follow">
+          <p>Follow us</p>
+          <div class="post-images">
+            <img src="./img/post-content1.png" alt=""/>
+            <img src="./img/post-content2.png" alt=""/>
+            <img src="./img/post-content3.png" alt=""/>
+            <img src="./img/post-content.png" alt=""/>
+          </div>
+        </div>
+        <div class="social border-white">
+          <img src="./img/contacts telephone.png" alt=""/>
+          <div class="tele">
+            <p>+94 4444 5555 6</p>
+          </div>
+        </div>
+        <div class="social gpss">
+          <img src="./img/contacts gps.png" alt=""/>
+          <div class="gps">
+            <p>but also the leap into electronic typesetting</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="feedback">
+        <div class="container">
+          <h2>Say hello</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing .</p>
+
+          <form action="">
+            <div class="inline">
+              <div>
+                <label for="">First name</label>
+                <input type="text"/>
+              </div>
+              <div>
+                <label for="">Last name</label>
+                <input type="text"/>
+              </div>
+            </div>
+            <label for="">Email Address</label>
+            <input type="email" class="one-line"/>
+
+            <label for="">Message</label>
+            <textarea class="one-line"></textarea>
+
+            <button type="button">Get in touch</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="container email">
+        <h3>
+          Lorem Ipsum
+        </h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        </p>
+        <div class="block">
+          <div>
+            <h4>Stay in the loop</h4>
+            <p>Subscribe to receive the latest news and updates about TDA.
+              We promise not to spam you! </p>
+          </div>
+          <div>
+            <input type="email" id="emailField" placeholder="Enter email address"/>
+            <button onclick="checkEmail()">Continue</button>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="blocks container">
+          <div>
+            <span class="logo">LOGO</span>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+          </div>
+          <div>
+            <h4>About us</h4>
+            <ul>
+              <li>Zeux</li>
+              <li>Portfolio</li>
+              <li>Careers</li>
+              <li>Contact us</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact us</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            <p>+908 89097 890</p>
+          </div>
+          <div >
+            <img src="img/footer.png">
+          </div>
+        </div>
+        <hr />
+        <p>Copyright ® 2021 Lorem All rights Rcerved</p>
+      </footer>
+
+      <script>
+        function checkEmail() {
+          let email = document.querySelector('#emailField').value;
+          if(!email.includes('@')) alert('Нет символа @');
+          else if(!email.includes('.')) alert('Нет символа .');
+          else alert('Все отлично!');
+        }
+      </script>
+    </div>
+  </body>
+</html>
